@@ -1,0 +1,51 @@
+{
+  "detail": [
+    {
+      "roll": "011",
+      "name": "Priya",
+      "dob": "11-06-1999",
+      "score": 410,
+      "id": 1
+    },
+    {
+      "roll": "038",
+      "name": "Archi",
+      "dob": "19-12-2000",
+      "score": "490",
+      "id": 2
+    },
+    {
+      "roll": "091",
+      "name": "Varun",
+      "dob": "11-11-2000",
+      "score": "483",
+      "id": 4
+    },
+    {
+      "roll": "184",
+      "name": "Prakhar",
+      "dob": "16-11-2001",
+      "score": "399",
+      "id": 7
+    },
+    {
+      "roll": "216",
+      "name": "Arpit",
+      "dob": "19-2-1999",
+      "score": "491",
+      "id": 10
+    }
+  ],
+  "user": [
+    {
+      "id": 1,
+      "email": "archiagrawal",
+      "password": "nagarro"
+    },
+    {
+      "id": 2,
+      "email": "teacher.nag",
+      "password": "nag"
+    }
+  ]
+}

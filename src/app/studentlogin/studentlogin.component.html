@@ -1,0 +1,46 @@
+
+<div id="Form-contents">
+  <div *ngIf="resultmanagement.studalert" class="alert alert-danger alert-dismissible fade show" role="alert">
+    <strong>Login Failed</strong>
+    <button (click)="studcloseAlert()" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  <img id="logo" src="https://shop.wf-education.com/media/wysiwyg/Book_Care_teardrop.png" height="80px" width="65px">
+  <span>Student Sign In</span>
+  <form [formGroup]="studentloginDetail" (ngSubmit)="studentlogin()">
+
+    <input type="text" placeholder="Enrollment No." class="form-control" formControlName="roll" required>
+    <input type="text" placeholder="Name" class="form-control" formControlName="name" required>
+    <input class="btn btn-info" type="submit" value="Login">
+
+  </form>
+  <script>
+    var app = angular.module('studentlogin', []);
+    
+    app.config(function ($provide) {
+
+        $provide.decorator('$exceptionHandler', function ($delegate) {
+
+            return function (exception, cause) {
+                $delegate(exception, cause);
+
+                alert('Error occurred! Please contact admin.');
+            };
+        });
+    });
+
+    app.controller("studentController", function ($scope) {
+      $scope.error="";
+      $scope.login= function(){
+        try{
+          throw new Error('Login Failed');
+        } catch(error){
+          $scope.error= 'LOGIN FAILED: '+error.message;
+        }
+      }
+        
+    });
+
+</script>
+
+
+</div>

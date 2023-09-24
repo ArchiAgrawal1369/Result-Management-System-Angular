@@ -1,0 +1,38 @@
+<div>
+    <h2>YOUR RESULTS</h2>
+  </div>
+  <a id="logout" (click)="logout()"><button class="btn btn-info mt-2" type="submit">Logout</button></a>
+  
+
+  <div id="Form-contents">
+
+    <form [formGroup]="viewDetail">
+      <div class="row form-group">
+        <label class="col-sm-3 col-form-label pt-4">Roll No.</label>
+        <div class="col-sm-8">
+          <input type="text" class="form-control" formControlName="roll" readonly>
+        </div>
+      </div>
+      <div class="row form-group">
+        <label class="col-sm-3 col-form-label pt-4">Name</label>
+        <div class="col-sm-8">
+          <input type="text" class="form-control" formControlName="name" readonly>
+        </div>
+      </div>
+      <div class="row form-group">
+        <label class="col-sm-3 col-form-label pt-4">DOB</label>
+        <div class="col-sm-8">
+          <input type="text" class="form-control" formControlName="dob" readonly>
+        </div>
+      </div>
+  
+      <div class="row form-group">
+        <label class="col-sm-3 col-form-label pt-4">Score</label>
+        <div class="col-sm-8">
+          <input type="text" class="form-control" formControlName="score" readonly >
+        </div>
+      </div>
+  
+  </form>
+  </div>
+

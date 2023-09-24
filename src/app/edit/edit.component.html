@@ -1,0 +1,47 @@
+<div>
+  <h2>EDIT RESULTS</h2>
+</div>
+<a id="logout" (click)="logout()"><button class="btn btn-info mt-2" type="submit">Logout</button></a>
+
+  
+  <div id="Form-contents">
+    <div *ngIf="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+      <strong>Details have been updated successfully.</strong> 
+      <button (click)="closeAlert()" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    
+    <form [formGroup]="editDetail" (ngSubmit)="collection()">
+      <div class="row form-group">
+        <label class="col-sm-3 col-form-label pt-4">Roll No.</label>
+        <div class="col-sm-8">
+          <input type="text" class="form-control" formControlName="roll" required>
+        </div>
+      </div>
+      <div class="row form-group">
+        <label class="col-sm-3 col-form-label pt-4">Name</label>
+        <div class="col-sm-8">
+          <input type="text" class="form-control" formControlName="name" required>
+        </div>
+      </div>
+      <div class="row form-group">
+        <label class="col-sm-3 col-form-label pt-4">DOB</label>
+        <div class="col-sm-8">
+          <input type="text" class="form-control" formControlName="dob">
+        </div>
+      </div>
+  
+      <div class="row form-group">
+        <label class="col-sm-3 col-form-label pt-4">Score</label>
+        <div class="col-sm-8">
+          <input type="text" class="form-control" formControlName="score" >
+        </div>
+      </div>
+  
+      <div>
+        <button type="submit" class="btn btn-info px-5 mt-4">Update</button>
+        <a routerLink="/list"> <button class="btn btn-dark px-5 mx-2 mt-4">Back</button></a>
+      </div>
+  
+  </form>
+  </div>
+  

@@ -1,0 +1,16 @@
+
+<div id="Form-contents">
+  <div *ngIf="resultmanagement.alert" class="alert alert-danger alert-dismissible fade show" role="alert">
+    <strong>Login Failed</strong>
+    <button (click)="closeAlert()" type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+  <img id="logo" src="https://shop.wf-education.com/media/wysiwyg/Book_Care_teardrop.png" height="80px" width="65px">
+  <span>Teacher Sign In</span>
+  <form [formGroup]="teacherloginDetail" (ngSubmit)="teacherlogin()">
+
+    <input type="email" placeholder="Email Address" class="form-control" formControlName="email" required>
+    <input type="password" placeholder="Password" class="form-control" formControlName="password" required>
+    <input class="btn btn-info" type="submit" value="Login">
+
+  </form>
+</div>
