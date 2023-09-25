@@ -13,25 +13,25 @@ The data has been provided in db.json  as `details/`(students' results) and `use
 ## Frontend
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 #### Home Component.
-<img src="./src/assets/Home.png">
+<img width=600px src="./src/assets/Home.png">
 
 #### Teacher Login Component.
-<img src="./src/assets/Teacher.png">
+<img  width=600px src="./src/assets/Teacher.png">
 
 #### Incorrect credentials alert.
-<img src="./src/assets/Failed_Login.png">
+<img  width=600px src="./src/assets/Failed_Login.png">
 
 #### View records of all students.
-<img src="./src/assets/Main.png">
+<img  width=600px src="./src/assets/Main.png">
 
 #### Add new record.
-<img src="./src/assets/Add.png">
+<img  width=600px src="./src/assets/Add.png">
 
 #### Edit existing record.
-<img src="./src/assets/Edit.png">
+<img  width=600px src="./src/assets/Edit.png">
 
 #### Student Login Component.
-<img src="./src/assets/Student.png">
+<img  width=600px src="./src/assets/Student.png">
 
 #### Student's result.
-<img src="./src/assets/View.png">
+<img  width=600px src="./src/assets/View.png">
