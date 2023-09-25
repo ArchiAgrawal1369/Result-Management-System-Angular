@@ -1,6 +1,6 @@
 # ResultManagement
 
-#### A Result Management System | Technology Stack : Angular + JSON Server
+#### A Result Management System | Technology Stack : Angular + JSON Server 
   
 The system allows two types of users, teachers and students, to login. Teachers can view results of all the students, add new records, edit or delete existing records. Students can login to view their results by entering their roll no. and name.
 
